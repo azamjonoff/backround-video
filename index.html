@@ -3,22 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>Backround-video</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
   </head>
   <body>
-    <!-- HEADER START -->
-    <header class="header"></header>
-    <!-- HEADER END -->
-
-    <!-- MAIN START -->
-    <main class="main"></main>
-    <!-- MAIN END -->
-
-    <!-- FOOTER START -->
-    <footer class="footer"></footer>
-    <!-- FOOTER END -->
+    <main class="main">
+      <section class="goals-type menu" id="menu">
+        <video
+          class="video hero__video_bg"
+          loop
+          autoplay
+          muted
+          src="./video/hero-bg-video.MP4"
+        ></video>
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__content_title">Type of goals</h1>
+            <ul class="sitenav">
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#power_shot">Power shot</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#free_kick">Free kick</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#bicycle">Bicycle</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="goals-type power">
+        <video
+          muted
+          autoplay
+          loop
+          class="video power__video_bg"
+          src="./video/power-video.MP4"
+        ></video>
+        <div class="power__content" id="power_shot">
+          <h1 class="power__title">Power Shot</h1>
+          <div class="power__youtube">
+            <iframe
+              width="300"
+              height="160"
+              src="https://www.youtube.com/embed/rBvOSEj0CGo?si=7yA-vqFlRUn5xl6n"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="300"
+              height="160"
+              src="https://www.youtube.com/embed/c0g6zkdOM4s?si=ToMEVywR_X1ab_pL"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a class="sitenav__link" href="#menu">Home</a>
+        </div>
+      </section>
+      <section class="goals-type free-kick">
+        <video
+          autoplay
+          loop
+          muted
+          class="video free-kick__video_bg"
+          src="./video/free-kick.MP4"
+        ></video>
+        <div class="free-kick__content" id="free_kick">
+          <h1 class="free-kick__title">Free kick</h1>
+          <p class="free-kick_description">
+            This match took place on May 1, 2019, and Barcelona won 3:0 at home.
+            Unfortunately, in the next return match, Liverpool won 4:0 at
+            Anfield Stadium and qualified for the final. In any case, Messi's
+            goal went down in history
+          </p>
+          <a class="sitenav__link" href="#menu">Home</a>
+        </div>
+      </section>
+      <section class="goals-type bicycle">
+        <video
+          autoplay
+          loop
+          muted
+          class="video bicycle_goal"
+          src="./video/bicycle_goal.mp4"
+        ></video>
+        <div class="bicycle__content" id="bicycle">
+          <h1 class="bicycle__title">Bicycle</h1>
+          <p class="bicycle_description">
+            This game was the first part of Juventus vs Real madrid and in this
+            part the score was 0:3 and the third goal was scored by football
+            king Cristiano Ronaldo bicycle style. In the same month, Juventus
+            fans also stood and applauded Ronaldo's actions. I also watched that
+            game live and screamed when Ronaldo scored. Ronaldo's goal also went
+            down in history
+          </p>
+          <a class="sitenav__link" href="#menu">Home</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
